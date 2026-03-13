@@ -11,8 +11,11 @@
 <header class="header">
   <div class="container header__inner">
     <a class="brand" href="index.html">
-      <img class="brand__img" src="assets/img/logo-tesi.png" alt="Logo TESI" />
-      <span class="brand__name">Radio TESI</span>
+      <img class="brand__img" src="assets/img/logo-tesi.png" alt="Logo TESI" onerror="this.style.display='none'" />
+      <div>
+        <span class="brand__name">Radio TESI</span>
+        <span class="brand__tag">Tecnológico de Estudios Superiores Ixtapaluca</span>
+      </div>
     </a>
 
     <nav class="nav">
@@ -28,8 +31,8 @@
 
 <main class="section">
   <div class="container">
-    <h1>Transmisión en vivo</h1>
-    <p class="muted">En este avance el reproductor está listo para conectarse a una URL real de streaming. Por ahora es un placeholder para la entrega.</p>
+    <h1 style="color:var(--green2)">Transmisión en vivo</h1>
+    <p class="muted">En este avance el reproductor está listo para conectarse a una URL real de streaming.</p>
 
     <div class="card">
       <h3>Reproductor</h3>
@@ -70,7 +73,7 @@
 <footer class="footer">
   <div class="container footer__inner">
     <span class="muted">© <span id="year"></span> Radio TESI</span>
-    <span class="muted">Avance para GitHub Pages</span>
+    <span class="muted">Sitio publicado con GitHub Pages</span>
   </div>
 </footer>
 <script src="assets/js/app.js"></script>

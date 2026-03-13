@@ -11,8 +11,11 @@
 <header class="header">
   <div class="container header__inner">
     <a class="brand" href="index.html">
-      <img class="brand__img" src="assets/img/logo-tesi.png" alt="Logo TESI" />
-      <span class="brand__name">Radio TESI</span>
+      <img class="brand__img" src="assets/img/logo-tesi.png" alt="Logo TESI" onerror="this.style.display='none'" />
+      <div>
+        <span class="brand__name">Radio TESI</span>
+        <span class="brand__tag">Tecnológico de Estudios Superiores Ixtapaluca</span>
+      </div>
     </a>
 
     <nav class="nav">
@@ -28,7 +31,7 @@
 
 <main class="section">
   <div class="container">
-    <h1>Flyers y eventos</h1>
+    <h1 style="color:var(--green2)">Flyers y eventos</h1>
     <p class="muted">Espacio para publicar convocatorias, carteles, talleres y avisos del instituto.</p>
 
     <div class="grid grid--3">
@@ -56,7 +59,7 @@
 <footer class="footer">
   <div class="container footer__inner">
     <span class="muted">© <span id="year"></span> Radio TESI</span>
-    <span class="muted">Avance para GitHub Pages</span>
+    <span class="muted">Sitio publicado con GitHub Pages</span>
   </div>
 </footer>
 <script src="assets/js/app.js"></script>
