@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Radio TESI | En vivo</title>
+  <meta name="description" content="Reproductor de transmisión en vivo de Radio TESI." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__img" src="assets/img/logo-tesi.png" alt="Logo TESI" />
+      <span class="brand__name">Radio TESI</span>
+    </a>
+
+    <nav class="nav">
+      <a href="radio.html">En vivo</a>
+      <a href="flyers.html">Flyers</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="acerca.html">Acerca</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="section">
+  <div class="container">
+    <h1>Transmisión en vivo</h1>
+    <p class="muted">En este avance el reproductor está listo para conectarse a una URL real de streaming. Por ahora es un placeholder para la entrega.</p>
+
+    <div class="card">
+      <h3>Reproductor</h3>
+      <audio controls preload="none" class="audio">
+        <source src="TU_URL_STREAM_AQUI" type="audio/mpeg" />
+        Tu navegador no soporta audio HTML5.
+      </audio>
+
+      <div class="meta">
+        <div>
+          <strong>Estado</strong>
+          <div class="muted" id="streamStatus"></div>
+        </div>
+        <div>
+          <strong>Ahora suena</strong>
+          <div class="muted" id="nowPlayingRadio"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid--2" style="margin-top:14px"> 
+      <div class="card">
+        <h3>Programación demo</h3>
+        <ul class="list">
+          <li>Lunes 10:00 Noticias</li>
+          <li>Miércoles 12:00 Cultura</li>
+          <li>Viernes 14:00 Música</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Objetivo</h3>
+        <p class="muted">Difundir información del TESI y brindar una transmisión de radio por internet para la comunidad escolar.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="muted">© <span id="year"></span> Radio TESI</span>
+    <span class="muted">Avance para GitHub Pages</span>
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+
